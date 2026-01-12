@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: traffic-light-controller
+
+# Traffic Light Configuration
+traffic-light:
+  default-green-duration: 30000 # 30 seconds
+  default-yellow-duration: 5000 # 5 seconds
+  default-red-duration: 35000 # 35 seconds (green + yellow of other direction)
+
+# OpenAPI Configuration
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+
+logging:
+  level:
+    com.trafficlight: DEBUG
+    org.springframework.web: INFO

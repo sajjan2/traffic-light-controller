@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: traffic-light-controller-test
+
+# Traffic Light Configuration for tests
+traffic-light:
+  default-green-duration: 5000 # 5 seconds for faster tests
+  default-yellow-duration: 2000 # 2 seconds
+  default-red-duration: 7000 # 7 seconds
+
+logging:
+  level:
+    com.trafficlight: DEBUG
+    org.springframework.web: INFO
